@@ -1,0 +1,115 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block content %}
+
+   <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>About Us</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>About Us</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Story Intro Section ======= -->
+    <div class="text-center">
+
+    <div>
+
+<p><h4 class="about"> OUR MISSION </h4></p>
+
+<p> To engage in commercial avocado production while</p>
+<p>contributing to environmental conservation, creating employment,</p>
+<p>offering training and technology transfer to the local community.</p>
+
+
+    <hr>
+</div>
+ </div>
+
+
+  <!-- End Story Intro Section -->
+
+    <!-- ======= Featured Members Section ======= -->
+    <section id="featured-members" class="featured-members">
+      <div class="container">
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <img src="{% static 'ProjectImages/corevalues.png' %}" class="img-fluid" alt="" width="100%">
+          </div>
+
+          <div class="col-lg-6 pt-3 pt-lg-0">
+            <h3>CORE VALUES</h3>
+
+            <ul>
+              <li><i class="bi bi-check"></i> Highest standards of Integrity </li>
+              <li><i class="bi bi-check"></i>Respect for individuals </li>
+              <li><i class="bi bi-check"></i> Dedication to helping our workers and customers</li>
+              <li><i class="bi bi-check"></i> Innovations</li>
+              <li><i class="bi bi-check"></i>Teamwork </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+   <section>
+      <div class="container">
+
+        <div class="row content">
+
+          <div class="col-lg-6 pt-3 pt-lg-0">
+            <h3>OUR VISION</h3>
+            To supply avocados in a large scale within the country and abroad.
+          </div>
+
+          <div class="col-lg-6">
+            <img src="{% static 'ProjectImages/vision2.png' %}" class="img-fluid" alt="" width="100%">
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+<section>
+  <div class="row content">
+
+          <div class="col-lg-6 container">
+            <img src="{% static 'ProjectImages/trophy.jpg' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 pt-3 pt-lg-0">
+            <h3>CREDENTIALS</h3>
+            <p>
+            The farm has in the past attracted the attention of both the government and non-governmental organizations.
+              In year 2009, it received the trophy for the best small-scale farmer in Meru from Agricultural Society of
+              Kenya and
+            Best Farmer, Ndurumo ya Arithi FDA from Mount Kenya East Pilot Project for Natural Resource Management
+            (MKEPP). The farm has a certificate in recognition of its contribution on food security by the United
+            Nations’ FAO and the Kenya’s Minister of Agriculture.
+        </p>
+          </div>
+        </div>
+
+
+</section>
+
+  </main>
+
+
+{% endblock %}
+

@@ -1,0 +1,76 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+  <!--The template carousel-->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url('/static/ProjectImages/avocado-slider.jpg')">
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url('/static/ProjectImages/cattle-ga6cac215e_1280.jpg')">
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url('/static/ProjectImages/beehives-g07dfeef3e_1280.jpg')">
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+
+  <main id="main">
+
+    <!-- ======= My & Family Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>MERU QUALITY SUPPLIERS</h2>
+          <p>
+Meru Quality Suppliers (MQS) is a family company registered in November 2016. As part of avocado growing, dairy cattle
+    and beekeeping operations are carried out making it necessary to plant fodder and bee trees too in the farm. The
+    three farming business units have symbiotic relationship with at least one other.
+
+The combination of trees, agricultural crops and animals in the farm provides many environmental benefits including
+    enhancing biodiversity and soil health.  Notably, the avocado is recommended by the World Agroforestry
+    Centre (ICRAF) as one of the most eligible commercial trees to include in agroforestry. The project therefore
+    promotes environmental conservation while creating employment, offering training and transferring technology mainly
+    to the local community.
+
+</p>
+
+        </div>
+
+      </div>
+    </section><!-- End My & Family Section -->
+
+
+
+  </main><!-- End #main -->
+
+
+{% endblock %}
+
+

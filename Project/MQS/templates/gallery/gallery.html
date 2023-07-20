@@ -1,0 +1,249 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block content %}
+
+       <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Farm Gallery</h2>
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li>Farm Gallery</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="gallery-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-dairy">Dairy farm</li>
+              <li data-filter=".filter-poultry">Poultry farm</li>
+              <li data-filter=".filter-fruit">Fruit trees</li>
+              <li data-filter=".filter-apiculture">Apiculture</li>
+              <li data-filter=".filter-others">Others</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row gallery-container">
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-dairy">
+            <div class="gallery-wrap">
+              <img src="{% static 'ProjectImages/cows.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <h4>Dairy 1</h4>
+                <p>Dairy</p>
+                <div class="gallery-links">
+                  <a href="{% static 'ProjectImages/cows.jpg' %}" class="glightbox" title="Dairy 1"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-poultry">
+            <div class="gallery-wrap">
+              <img src="{% static 'ProjectImages/hen.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <h4>Poultry 1</h4>
+                <p>Poultry</p>
+                <div class="gallery-links">
+                  <a href="{% static 'ProjectImages/hen.jpg' %}" class="glightbox" title="Poultry 1"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-fruit">
+            <div class="gallery-wrap">
+              <img src="{% static 'ProjectImages/ripeavocado.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <h4>Fruit 1</h4>
+                <p>Fruit</p>
+                <div class="gallery-links">
+                  <a href="{% static 'ProjectImages/ripeavocado.jpg' %}" class="glightbox" title="Fruit 1"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-apiculture">
+            <div class="gallery-wrap">
+              <img src="{% static 'ProjectImages/beesandcomb.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <h4>Apiculture 1</h4>
+                <p>Apiculture</p>
+                <div class="gallery-links">
+                  <a href="{% static 'ProjectImages/beesandcomb.jpg' %}" class="glightbox" title="Bees 1"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-others">
+            <div class="gallery-wrap">
+              <img src="{% static 'ProjectImages/fish.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <h4>Others 1</h4>
+                <p>Others</p>
+                <div class="gallery-links">
+                  <a href="{% static 'ProjectImages/fish.jpg' %}" class="glightbox" title="Others 1"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-dairy">
+            <div class="gallery-wrap">
+              <img src="{% static 'ProjectImages/browngoats.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <h4>Dairy 2</h4>
+                <p>Dairy</p>
+                <div class="gallery-links">
+                  <a href="{% static 'ProjectImages/browngoats.jpg' %}" class="glightbox" title="Dairy 2"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-poultry">
+            <div class="gallery-wrap">
+              <img src="{% static 'ProjectImages/chickens.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <h4>Poultry 2</h4>
+                <p>Poultry</p>
+                <div class="gallery-links">
+                  <a href="{% static 'ProjectImages/chickens.jpg' %}" class="glightbox" title="Poultry 2"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-fruit">
+            <div class="gallery-wrap">
+              <img src="{% static 'ProjectImages/halftree.png' %}" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <h4>Fruit 2</h4>
+                <p>Fruit</p>
+                <div class="gallery-links">
+                  <a href="{% static 'ProjectImages/halftree.png' %}" class="glightbox" title="Fruit 2"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-apiculture">
+            <div class="gallery-wrap">
+              <img src="{% static 'ProjectImages/flyingbees.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <h4>Apiculture 2</h4>
+                <p>Apiculture</p>
+                <div class="gallery-links">
+                  <a href="{% static 'ProjectImages/flyingbees.jpg' %}" class="glightbox" title="Bees 2"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-others">
+            <div class="gallery-wrap">
+              <img src="{% static 'ProjectImages/pigs.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <h4>Others 2</h4>
+                <p>Others</p>
+                <div class="gallery-links">
+                  <a href="{% static 'ProjectImages/pigs.jpg' %}" class="glightbox" title="Others 2"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-dairy">
+            <div class="gallery-wrap">
+              <img src="{% static 'ProjectImages/goats.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <h4>Dairy 3</h4>
+                <p>Dairy</p>
+                <div class="gallery-links">
+                  <a href="{% static 'ProjectImages/goats.jpg' %}" class="glightbox" title="Dairy 3"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-poultry">
+            <div class="gallery-wrap">
+              <img src="{% static 'ProjectImages/hens.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <h4>Poultry 3</h4>
+                <p>Poultry</p>
+                <div class="gallery-links">
+                  <a href="{% static 'ProjectImages/hens.jpg' %}" class="glightbox" title="Poultry 3"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-fruit">
+            <div class="gallery-wrap">
+              <img src="{% static 'ProjectImages/fulltree.png' %}" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <h4>Fruit 3</h4>
+                <p>Fruit</p>
+                <div class="gallery-links">
+                  <a href="{% static 'ProjectImages/fulltree.png' %}" class="glightbox" title="Fruit 3"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-apiculture">
+            <div class="gallery-wrap">
+              <img src="{% static 'ProjectImages/beesandhive.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <h4>Apiculture 3</h4>
+                <p>Apiculture</p>
+                <div class="gallery-links">
+                  <a href="{% static 'ProjectImages/beesandhive.jpg' %}" class="glightbox" title="Bees 3"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 gallery-item filter-others">
+            <div class="gallery-wrap">
+              <img src="{% static 'ProjectImages/macadamia.png' %}" class="img-fluid" alt="">
+              <div class="gallery-info">
+                <h4>Others 3</h4>
+                <p>Others</p>
+                <div class="gallery-links">
+                  <a href="{% static 'ProjectImages/macadamia.png' %}" class="glightbox" title="Others 3"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+  </main><!-- End #main -->
+
+{% endblock %}
+
+
+
+
